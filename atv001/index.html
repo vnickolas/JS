@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <p>Verificador de Idade</p>
+</header>
+<main>
+    <section>
+        <form action="cadastro.php" method="post" autocomplete="on">
+
+            <!---------------ANO DE IDADE--------------->
+            <p>
+                <label for="iano">Ano de nascimento</label>
+                <input type="number" name="ano" id="iano" min="1900" required placeholder="Ex: 1998" autocomplete="bday-year">
+            </p>
+
+            <!---------------SEXO--------------->
+            <p>Sexo:
+            <input type="radio" name="Sexo" id="imas"> <label for="imas">Masculino</label>
+            <input type="radio" name="Sexo" id="ifem"> <label for="ifem">Feminino</label>
+            </p>
+
+            <!---------------SUBMIT--------------->
+            <input type="submit" value="Verificar" id="verificar">
+
+        </form>
+        <!---------------RESULTADO--------------->
+
+        <div id="resultado">
+            <p>Detectamos que é uma mulher de 50 anos</p>
+            <!-- <img src="" alt="imagemilustrativa"> -->
+        </div>
+        <div id="imagem">
+
+        </div>
+
+    </section>
+</main>
+    <footer>
+        <p>@ Curso em vídeo</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: system-ui;
+    background-color: rgba(56, 146, 250, 0.521);
+    height: 98vh;
+    width: 100vw;
+}
+/* --------------FORMULÁRIO-------------- */
+header {
+    margin: auto;
+    width: 400px;
+    padding: 40px;
+
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+
+
+    /* background-color: rgb(0, 0, 0); */
+    color: white;
+}
+section {
+    margin: auto;
+    height: 450px;
+    width: 600px;
+
+    font-size: 1rem;
+
+
+    background-color: rgba(240, 248, 255, 0.945);
+    box-shadow: 1px 1px 8px 1px;
+    border-radius: 20px;
+}
+section form {
+    padding: 35px 0px 0px 30px;
+    font-size: 1.3rem;
+}
+ 
+
+/* --------------RESULTADO-------------- */
+#resultado { 
+    /* background-color: aquamarine; */
+    font-size: larger;
+    text-align: center;
+    margin-top: 14px;
+}
+
+#imagem { 
+    height: 250px;
+    width: 250px;
+    margin: auto;
+    margin-top: 20px;
+    
+    background-image: url(WhatsApp\ Image\ 2023-06-29\ at\ 11.24.46.jpg);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: black 1px 1px 10px;
+
+}
+footer {
+    text-align: center;
+    color: white;
+}
