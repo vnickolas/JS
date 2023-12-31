@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes de Condições em países</title>
+    <style>
+        body {
+            font-family: system-ui;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando nacionalidade</h1>
+    <p>
+        Digite sua nacionalidade aqui: 
+        <input type="text" name="pais" id="ipais">
+        <input type="button" value="Verificar" id="iverificar">
+    </p>
+    <div id="resultado">
+    </div>
+    <script>
+
+        iverificar.addEventListener('click', nacionalidade)
+
+        function nacionalidade () {
+            var country = document.querySelector('input#ipais')
+            var res = document.querySelector ('div#resultado')
+
+            res.innerHTML = `<p>Sua nacionalidade vem do(a) ${country.value}</p>`
+            
+            if (country == 'Brasil' || 'brasil' || 'brazil' || 'Brazil') {
+                res.innerHTML += `<p>Você é <strong>brasileiro</strong>!</p>`
+            } else {
+                res.innerHTML += `<p>Você é <strong>estrangeiro</strong>!</p>`
+            }
+        }
+    </script>
+</body>
+</html>

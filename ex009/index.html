@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando variáveis</title>
+    <style>
+        body {
+            font-family: system-ui
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistemas de Multas</h1>
+    <p>
+        O carro chegou à 
+        <input type="number" name="txtnum" id="txtnum" placeholder="digite aqui sua velocidade"> Km/h
+        <input type="button" value="Verificar" id="velocidade">
+    </p> 
+    <div id="resultado">
+
+    </div>
+
+
+    <script>
+        // var vel = document.querySelector('input#txtnum')
+        velocidade.addEventListener('click', calcular)
+        
+        function calcular () {
+            var txt = document.querySelector('input#txtnum')
+            var res = document.querySelector('div#resultado')
+            var vel = Number(txt.value)
+
+            res.innerHTML = `Sua velocidade atual é de ${vel}Km/h!`
+
+            if (vel > 60) {
+                res.innerHTML += `<p>A velocidade está acima do permitido, você foi <strong>multado</strong>!</p>`
+            }
+            res.innerHTML += `<p>Diriga sempre com o cinto de segurança!</p>`
+        }
+    </script>
+</body>
+</html>
