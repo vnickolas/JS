@@ -27,16 +27,16 @@
             </p>
 
             <!---------------SUBMIT--------------->
-            <input type="submit" value="Verificar" id="verificar">
+            <input type="submit" value="Verificar" id="iverificar" onclick="verificar()">
 
         </form>
         <!---------------RESULTADO--------------->
 
-        <div id="resultado">
-            <p>Detectamos que é uma mulher de 50 anos</p>
-            <!-- <img src="" alt="imagemilustrativa"> -->
+        <div id="iresultado">
+            <p>Detectamos que é...</p>
         </div>
-        <div id="imagem">
+        <div id="idivimagem">
+            <img src="Places-user-identity-icon.png" alt="imagemilustrativa">
 
         </div>
 
@@ -45,5 +45,27 @@
     <footer>
         <p>@ Curso em vídeo</p>
     </footer>
+
+    <script>
+
+        iverificar.addEventListener('click', verificar)
+
+        // function calc () {
+        // }
+
+        function verificar () {
+        
+        var res = document.getElementById('iresultado')
+        var img = document.getElementById('idivimagem')
+            var agora = new Date()
+            var ano = agora.getFullYear()
+            
+            
+    
+    
+    }
+        
+
+    </script>
 </body>
 </html>
