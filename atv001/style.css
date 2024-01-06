@@ -26,24 +26,18 @@ header {
 
 /* --------------FORMULÁRIO-------------- */
 
-section {
+#form {
     margin: auto;
     height: 450px;
     width: 600px;
-
-    font-size: 1rem;
-
+    padding: 35px;
 
     background-color: rgba(240, 248, 255, 0.945);
     box-shadow: 1px 1px 8px 1px;
     border-radius: 20px;
+    font-size: 1rem;
 }
-section form {
-    padding: 35px 0px 0px 40px;
-    font-size: 1.2rem;
 
-}
- 
 
 /* --------------RESULTADO-------------- */
 #iresultado { 
@@ -54,9 +48,14 @@ section form {
 }
 
 #idivimagem {
-    height: 250px;
-    width: 250px;
-    margin: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    
+    background-size: cover;
+    background-position: center center;
 
 }
 

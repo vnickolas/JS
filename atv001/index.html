@@ -11,8 +11,7 @@
     <p>Verificador de Idade</p>
 </header>
 <main>
-    <section>
-        <form action="cadastro.php" method="post" autocomplete="on">
+    <section id="form">
 
             <!---------------ANO DE IDADE--------------->
             <p>
@@ -27,45 +26,24 @@
             </p>
 
             <!---------------SUBMIT--------------->
-            <input type="submit" value="Verificar" id="iverificar" onclick="verificar()">
+            <input type="submit" value="Verificar" id="iverificar">
+    
+            <!---------------RESULTADO--------------->
 
-        </form>
-        <!---------------RESULTADO--------------->
-
-        <div id="iresultado">
-            <p>Detectamos que é...</p>
-        </div>
-        <div id="idivimagem">
-            <img src="Places-user-identity-icon.png" alt="imagemilustrativa">
-
-        </div>
-
+            <div id="iresultado">
+                <p>Detectamos...</p>
+            </div>
+            <div id="idivimagem">
+                <img src="imagens/Places-user-identity-icon.png" alt="imagemilustrativa" id="iimagem">
+            </div>
     </section>
 </main>
+
     <footer>
         <p>@ Curso em vídeo</p>
     </footer>
 
-    <script>
+    <script src="script.js"></script>
 
-        iverificar.addEventListener('click', verificar)
-
-        // function calc () {
-        // }
-
-        function verificar () {
-        
-        var res = document.getElementById('iresultado')
-        var img = document.getElementById('idivimagem')
-            var agora = new Date()
-            var ano = agora.getFullYear()
-            
-            
-    
-    
-    }
-        
-
-    </script>
 </body>
 </html>
