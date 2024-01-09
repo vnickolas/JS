@@ -11,7 +11,11 @@ function verificar () {
         var anonasc = Number(txanonasc.value)
         var idade = anoatual - anonasc
         
-
+        
+        var fsex = document.getElementsByName('Sexo')
+        // var anonasc = Number(txanonasc.value)
+        var gen = ''
+        var img = document.getElementById('iimagem') 
 
         // ---------Script
 
@@ -20,12 +24,8 @@ function verificar () {
                 window.alert('[ERRO] Verifiquei novamente se o ano digitado é dentro de um período válido e tente novamente')
         } 
         else { //CRIANDO O SCRIPT PRINCIPAL
+               
 
-
-                var fsex = document.getElementsByName('Sexo')
-                // var anonasc = Number(txanonasc.value)
-                var gen = ''
-                var img = document.getElementById('iimagem')
                         if (fsex[0].checked) { //Criando condições para masculino
                                 gen = 'Homem'
                                 if (idade >= 0 && idade <= 4) {

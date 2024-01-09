@@ -5,7 +5,7 @@
 var agora = new Date()
 var diaSem = agora.getDay()
 
-// -------------SCRIPT HORAS-------------
+// -------------SCRIPT DIA DA SEMANA-------------
 
 diaSem = 5
 
