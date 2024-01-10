@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100vh;
+    width: 100vw;
+    font-family: system-ui;    
+    background-color: antiquewhite;
+}
+header {
+    text-align: center;
+    padding: 24px;
+    background-color: aliceblue; 
+    border-radius: 10px;
+    box-shadow: black 10px 10px;   
+    
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 300px;
+}
+
+/* FORMULÁRIO */
+#form {
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: black 10px 10px;
+
+    padding: 30px;
+    margin: auto;
+    width: 500px;
+
+    line-height: 2.2em;
+    font-weight: bold;
+}
+#form input {
+    margin: 5px;
+    border-radius: 7px;
+    box-shadow: black 2px 2px;
+    padding: 4px;
+}
+
+/* BOTOES */
+
+#botoes input {
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: black 5px 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+#botoes input:hover {
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+}
+
+/* RODAPÉ */
+
+footer {    
+    padding: 20px;
+    margin: auto;
+    width: 500px;
+}
