@@ -1,6 +1,7 @@
-icontador.addEventListener('click', contar)
-ilimpar.addEventListener('click', limpar)
 
+//contador
+
+icontador.addEventListener('click', contar)
 
 let res = document.getElementById('iresultado')
 let iini = document.getElementById('iinicio')
@@ -26,6 +27,10 @@ function contar() {
                 }
             }
 }
+
+//limpar
+ilimpar.addEventListener('click', limpar)
+
 function limpar() {
     res.innerHTML = 'Contando: '
 }
