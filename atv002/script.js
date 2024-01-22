@@ -16,6 +16,7 @@ function contar() {
     let ini = Number(iini.value)
     let fim = Number(ifim.value)
     let pass = Number(ipass.value)
+    res.innerHTML = `Contando: `      
                 if (ini < fim) { //contagem crescente
                     for(let c = ini; c <= fim; c += pass) {
                     res.innerHTML += `${c}👉`  
@@ -25,7 +26,7 @@ function contar() {
                         res.innerHTML += `${c}👉`                         
                     }      
                 }
-            }
+            } res.innerHTML += `FIM!`
 }
 
 //limpar

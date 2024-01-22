@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de números</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Analisador de números</h1>
+    </header>
+    <main>
+        <section id="iform">
+
+            <p>
+                <label for="inum">Número (entre 1 à 100):</label> <input type="number" name="num" id="inum">
+                <input type="button" value="Adicionar" id="iadicionar">
+            </p>
+
+            
+            <p>
+                <div id="iresultado">
+                <p>  
+                <select name="tabela" id="itabela" size="10" style="width: 300px; resize: none;">
+                    <option value="textoTabela">Os números adicionados vão aparecer aqui</option>
+                </select>
+                </p>
+
+                <p>
+                <input type="button" value="Verificar" id="iverificar">
+                </p>
+
+                </div>
+            </p>
+
+        </section>
+    </main>
+
+    <footer> ® Curso em vídeo</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

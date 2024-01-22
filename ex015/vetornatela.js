@@ -11,6 +11,6 @@ valores.sort()
 //     console.log(`A posição ${pos} tem o valor ${valores[pos]}`)
 // }
 
-for(let pos in valores) {
-    console.log(`A posição ${pos} tem o valor ${valores[pos]}`)
+for(let pos in valores) { // para(for) cada let(pos) dentro(in) de valores(valores), eu vou mostrar o conteúdo abaixo
+    console.log(`A posição ${pos} tem o valor ${valores[pos]}`) //'${valores[pos]} pois se colocasse só 'valores', iria aparecer todos os valores dentro da variável que determinamos no let ([8, 1, 7, 4, 2, 9]), mas 'valores[pos]', ele mostra o valor correspondente ao 'pos' que está sendo contato no momento (podemos ler como: valor(valores) referente a posição(pos) X)'
 }
