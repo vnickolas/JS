@@ -40,7 +40,7 @@ header {
 #iform input {
     margin: 5px;
     border-radius: 7px;
-    /* box-shadow: black 2px 2px; */
+    
     padding: 4px;
     font-weight: bold;
 }
