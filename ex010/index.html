@@ -32,12 +32,14 @@
         iverificar.addEventListener('click', nacionalidade)
 
         function nacionalidade () {
-            var country = document.querySelector('input#ipais')
+            var country = document.querySelector('input#ipais').value
             var res = document.querySelector ('div#resultado')
 
-            res.innerHTML = `<p>Sua nacionalidade vem do(a) ${country.value}</p>`
+            res.innerHTML = `<p>Sua nacionalidade vem do(a) ${country}</p>`
             
-            if (country == 'Brasil' || 'brasil' || 'brazil' || 'Brazil') {
+            var pais = country.toLowerCase() //to convert the country name to lowercase for comparison
+
+            if (pais == 'brasil' || pais == 'brazil' ) {
                 res.innerHTML += `<p>Você é <strong>brasileiro</strong>!</p>`
             } else {
                 res.innerHTML += `<p>Você é <strong>estrangeiro</strong>!</p>`

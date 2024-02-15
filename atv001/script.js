@@ -1,5 +1,6 @@
 iverificar.addEventListener('click', verificar)
 
+
 function verificar () {
         
         var res = document.getElementById('iresultado')
@@ -13,7 +14,6 @@ function verificar () {
         
         
         var fsex = document.getElementsByName('Sexo')
-        // var anonasc = Number(txanonasc.value)
         var gen = ''
         var img = document.getElementById('iimagem') 
 
@@ -21,7 +21,7 @@ function verificar () {
 
         if //CRIANDO O SCRIPT DE ERRO
         (txanonasc.value.length == 0 || anonasc > anoatual) { 
-                window.alert('[ERRO] Verifiquei novamente se o ano digitado é dentro de um período válido e tente novamente')
+                window.alert('[ERRO] Verifique novamente se o ano digitado é dentro de um período válido e tente novamente')
         } 
         else { //CRIANDO O SCRIPT PRINCIPAL
                

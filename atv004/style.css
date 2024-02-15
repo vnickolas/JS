@@ -47,7 +47,7 @@ header {
 
 /* BOTOES */
 
-#iverificar, #iadicionar {
+#iverificar, #iadicionar, #ilimpar {
     margin: 5px;
     border-radius: 10px;
     box-shadow: black 5px 5px;

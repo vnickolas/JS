@@ -27,16 +27,24 @@ function adicionar() { //verificar se é um número(isNumero) e se ele já está
         
         // window.alert('Tudo OK!')
 
-        valores.push(Number(num.value)) //Os valores(.value) que a pessoa colocar no input number(num), serão colocados no vetor/array(valores.push) como número(Number.)...
-        let item = document.createElement('option')//Assim, para aparecer na tela que os valores foram adicionados, criaremos pelo JS as linhas do 'options' onde serão escritos quais valores foram adicionados. Nesse caso, criamos uma variável 'item' para designar o 'option' criado pelo .createElement
-        item.text = `O valor ${num.value} foi adicionado` //Criado o 'option', podemos colocar dentro dele(.tex) qual o número que a pessoa digitou e que foi adicionado no vetor/array(num.value)
-        lista.appendChild(item)//Para finalizar, para o 'option' aparecer na lista, designamos ele(item) como filho(.appendChild) da lista
+        valores.push(Number(num.value)) 
+        //Os valores(.value) que a pessoa colocar no input number(num), serão colocados no vetor/array(valores.push) como número(Number.)...
+
+        let item = document.createElement('option')
+        //Assim, para aparecer na tela que os valores foram adicionados, criaremos pelo JS as linhas do 'options' onde serão escritos quais valores foram adicionados. Nesse caso, criamos uma variável 'item' para designar o 'option' criado pelo .createElement
+
+        item.text = `O valor ${num.value} foi adicionado` 
+        //Criado o 'option', podemos colocar dentro dele(.text) qual o número que a pessoa digitou e que foi adicionado no vetor/array(num.value)
+
+        lista.appendChild(item)
+        //Para finalizar, para o 'option' aparecer na lista, designamos ele(item) como filho(.appendChild) da lista
+
         res.innerHTML = `` //Toda Vez que clicar em adicionar o número, mesmo depois de 'Verificar', o 'res' vai ficar vazio para não achar que o último 'Verificar' corresponde ao valor que acabou de ser adicionado também
     } else {
         window.alert('Valor inválido ou já encontrado na lista')
     }
     num.value = '' //Após executar todo o código, queremos que o campo do input fique limpo(' ')
-    num.focus() //Depois de limpo, ainda queremos que o mouse foque(.focus()) no input(num) de colocar o número
+    num.focus() //Depois de limpo, ainda queremos que o mouse foque(.focus()) no input(num) para colocar mais números
 }
 
 
@@ -71,6 +79,13 @@ function verificar() {
         res.innerHTML += `<p>Por último, a média dos valores é de ${media}!</p>`
     }
 }
+
+ilimpar.addEventListener('click', limpar)
+
+function limpar() {
+    res.innerHTML = ``
+}
+
 //RegEx
 //JSON
 //AJAX
